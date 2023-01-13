@@ -8,5 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ExpansesComponent {
   title = 'Expanses';
   date = new Date();
-  @Input() name: String = '';
+  name: string = '';
+  price: number = 0;
+  productOrService: string = '';
 }
