@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { List } from '../list';
 
 @Component({
   selector: 'app-expanses',
@@ -6,9 +7,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./expanses.component.css'],
 })
 export class ExpansesComponent {
-  title = 'Expanses';
-  date = new Date();
-  name: string = '';
-  price: number = 0;
-  productOrService: string = '';
+  list: List = {
+    id: 1,
+    name: 'apple',
+    price: 10,
+    good: true,
+    service: false,
+  };
 }

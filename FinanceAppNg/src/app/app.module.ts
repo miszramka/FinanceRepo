@@ -8,10 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
-import { ExpanseListComponent } from './expanse-list/expanse-list.component';
 
 @NgModule({
-  declarations: [AppComponent, ExpansesComponent, HomeComponent, ExpanseListComponent],
+  declarations: [AppComponent, ExpansesComponent, HomeComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,

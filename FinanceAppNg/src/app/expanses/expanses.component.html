@@ -1,18 +1,29 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span
-      >Hom much did you spent
-      <input type="text" id="name" [(ngModel)]="name" />?
+      >What did you buy?
+      <input type="text" id="name" [(ngModel)]="list.name" />
     </span>
   </mat-toolbar-row>
   <mat-toolbar-row>
-    <span class="spacer"
-      >I've spent <input type="number" id="price" [(ngModel)]="price" /> for
-      <input
-        type="text"
-        id="productOrService"
-        [(ngModel)]="productOrService"
-      /> </span
-    ><button mat-flat-button color="basic">Add</button>
+    <span
+      >I've spent <input type="number" id="price" [(ngModel)]="list.price" />
+    </span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span
+      >Was it good or service?
+      <div>
+        <input type="radio" id="good" name="goodOrService" checked />
+        <label for="good">Good</label>
+      </div>
+      <div>
+        <input type="radio" id="service" name="goodOrService" />
+        <label for="service">Service</label>
+      </div>
+    </span>
+  </mat-toolbar-row>
+  <mat-toolbar-row
+    ><span> <button mat-flat-button color="basic">Add</button></span>
   </mat-toolbar-row>
 </mat-toolbar>
